@@ -1,3 +1,52 @@
+<h1 align="center">Netflix</h1>
+<h2 align="center">
+<img src="./readme_img/header.png">
+</h2>
+
+<h3 align="center">
+    <a href="https://aimgame8.netlify.app/" target="_blank">Life Demo</a>
+</h3>
+
+
+### Description
+___
+Updated Netflix is a test updated version of the well-known site. I took the basic design from <a href="https://www.behance.net/gallery/93925195/NETFLIX-REDESIGN-UXUI-Movies-TV-Series">here</a>, but changed it a bit. This is a desktop version of the site, designed for devices with a width of 992px or more
+
+The project was created using React and SCSS. 
+<p><img src="https://img.shields.io/github/languages/top/liyakot/AIM-Game.svg"></p>
+
+### How it works
+___
+There are three screens in the game:
+1. Start game
+2. Choose a time
+3. Game board
+
+Changing screens is done by adding or remove the *up* class to the *screen*:
+`.screen.up {
+    margin-top: -100vh;
+}`
+
+**The game board looks like this:**
+
+<img width="400px" src="/readme_img/game-board.png">
+
+
+**How to make a circle appear of random size in random places on the board:**
+
+<img width="400px" src="/readme_img/function.png">
+
+
+
+At the end of the game, **the result** is displayed - **the number of hits on circle**, and you can start the game again
+
+<img width="300" src="/readme_img/fihish-game.png">
+
+### Additionally
+___
+
+I've learned myself web development without any courses or training, so if you have any comments, I will be happy to chat with you on social networks (see  my <a href="https://github.com/liyakot">profile</a> :fire:)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -29,42 +78,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
