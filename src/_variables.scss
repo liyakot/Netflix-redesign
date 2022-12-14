@@ -1,0 +1,18 @@
+$white: #e0e0e0;
+$mainRed: #e00d18;
+$darkRed: #bb0811;
+$lightGray: #505050;
+$darkGray: #111111;
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+$breakpoint-xxl: 1400px;
+$breakpoint-xl: 1200px;
+$breakpoint-l: 1024px;

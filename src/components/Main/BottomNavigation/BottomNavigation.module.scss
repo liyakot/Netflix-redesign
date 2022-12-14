@@ -1,0 +1,39 @@
+@import "../../../variables";
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+
+  > button {
+    opacity: .8;
+    transition: .4s ease;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding-bottom: .7rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: $white;
+    background-color: transparent;
+    margin: 0 1.5rem;
+
+    &.active {
+      border-color: $mainRed;
+      opacity: 1;
+    }
+
+    &:hover {
+      border-color: $darkRed;
+      opacity: 1;
+    }
+  }
+}
+
+.fixed {
+  position: fixed;
+}

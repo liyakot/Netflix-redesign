@@ -1,0 +1,57 @@
+@import "../../../variables";
+
+.more {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 0.5rem 3.6rem;
+  color: $white;
+  font-size: 1.4rem;
+  overflow: hidden;
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+
+    &_all {
+      a {
+        text-decoration: none;
+        display: flex;
+        color: $white;
+
+        i {
+          font-size: 1.8rem;
+          transition: 0.3s ease;
+        }
+
+        &:hover {
+          i {
+            color: $mainRed;
+            padding-left: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-gap: 0 0.8rem;
+    grid-auto-columns: calc(25% - 0.8rem);
+    grid-auto-flow: column;
+
+    &_item {
+      img {
+        width: 100%;
+        transition: 0.4s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

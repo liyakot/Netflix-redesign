@@ -1,0 +1,71 @@
+@import "../../../variables";
+
+.episodes {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba($darkGray, 0.9);
+  padding-bottom: 3.2rem;
+  height: 36rem;
+  width: 100vw;
+
+  .season {
+    border: none;
+    color: $white;
+    font-size: 1.3rem;
+    margin-left: 4.1rem;
+    width: 7.5rem;
+    padding: 0.5rem 0.5rem;
+    border-left: 3px solid $mainRed;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($white, 0.1);
+    }
+
+    &_option {
+      color: $darkGray;
+    }
+  }
+
+  &_container {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+    .gallery {
+      overflow: hidden;
+      margin: 0 0.6rem;
+
+      .list {
+        display: flex;
+        align-items: center;
+        transition: 1.5s all;
+        padding: 0;
+
+
+        &_item {
+          list-style-type: none;
+          margin: 0 0.5rem 1rem 0.5rem;
+          cursor: pointer;
+
+          img {
+            width: 18rem;
+            height: auto;
+            margin-bottom: 0.5rem;
+          }
+
+          .caption {
+            height: 2.5rem;
+            display: block;
+            color: $white;
+            font-size: 1.2rem;
+            margin-left: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
