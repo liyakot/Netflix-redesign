@@ -1,6 +1,5 @@
 import Search from "../Header/Search/Search";
 import styles from "./Header.module.scss";
-import stylesBtn from './../Main/Button/Button.module.scss';
 import { Link } from "react-router-dom";
 import Button from "../Main/Button/Button";
 
