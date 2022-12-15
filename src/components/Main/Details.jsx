@@ -15,7 +15,10 @@ const Details = ({ movie }) => {
     setIsInMyList(!isInMyList);
   };
   return (
-    <div className={`${styles.about_movie} ${styles.details}`}>
+    <div
+      className={`${styles.about_movie} ${styles.details}`}
+      style={{ zIndex: isActiveModal ? 5 : 3 }}
+    >
       {
         <img
           src={movie.logo}

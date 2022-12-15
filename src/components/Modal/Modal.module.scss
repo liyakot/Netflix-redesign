@@ -16,6 +16,10 @@
   pointer-events: none;
   transition: 0.5s;
 
+  iframe {
+    border: none;
+  }
+
   &_active {
     opacity: 1;
     pointer-events: all;

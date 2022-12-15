@@ -13,7 +13,6 @@ const Information = ({ movie }) => {
   const addToMyList = () => {
     localStorage.setItem(movie.name, JSON.stringify(!isInMyList));
     setIsInMyList(!isInMyList);
-    console.log(!isInMyList);
   };
 
   return (

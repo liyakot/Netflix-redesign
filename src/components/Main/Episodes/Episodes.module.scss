@@ -20,6 +20,7 @@
     border-left: 3px solid $mainRed;
     background-color: transparent;
     cursor: pointer;
+    transition: ease 0.2s;
 
     &:hover {
       background-color: rgba($white, 0.1);

@@ -17,11 +17,10 @@ const Modal = ({ isActiveModal, setIsActiveModal, link }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <iframe
-          width="560"
-          height="315"
+          width="616"
+          height="346"
           src={`https://www.youtube.com/embed/${link}`}
           title="YouTube video player"
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
