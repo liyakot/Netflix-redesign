@@ -12,22 +12,28 @@
 
   .season {
     border: none;
+    outline: none;
     color: $white;
     font-size: 1.3rem;
     margin-left: 4.1rem;
-    width: 7.5rem;
+    width: 8.5rem;
     padding: 0.5rem 0.5rem;
     border-left: 3px solid $mainRed;
     background-color: transparent;
     cursor: pointer;
     transition: ease 0.2s;
 
-    &:hover {
+    &:hover, &:active {
       background-color: rgba($white, 0.1);
+      outline: none;
     }
 
     &_option {
       color: $darkGray;
+
+      .number {
+        margin-right: 3rem;
+      }
     }
   }
 
