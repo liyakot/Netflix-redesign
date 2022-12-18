@@ -1,10 +1,10 @@
 <h1 align="center">Netflix</h1>
 <h2 align="center">
-<img src="./readme_img/header.png">
+<img src="/README_img/Main.png">
 </h2>
 
 <h3 align="center">
-    <a href="https://aimgame8.netlify.app/" target="_blank">Life Demo</a>
+    <a href="https://netflix-redesign5.netlify.app/" target="_blank">Life Demo</a>
 </h3>
 
 
@@ -31,23 +31,25 @@ This is a one-page site, and React Router is used to navigate between such compo
 
 **Here are examples of components:**
 
-*Popular:*
-<img width="600px" src="/Readme_img/Main.png"> 
+<p>*Popular:*</p> 
+<img width="600px" src="/README_img/Popular.png"> 
 
-*Form:*
-<img width="600px" src="/Readme_img/Form.png">
+<p>*Form:*</p>
+<img width="600px" src="/README_img/Form.png">
 
-*Cartoons:*
-<img width="600px" src="/Readme_img/Cartoons.png">
+<p>*Cartoons:*</p>
+<img width="600px" src="/README_img/Cartoons.png">
 
-Also, for each movie there is a trailer, review, episodes (if it is a series), details, and below a list of movies of a similar category
+Also, for each movie there is a *trailer*, *review*, *episodes* (if it is a series), *details*, and below a list of movies of a similar category.
+
+At the Header of each component there is a movie *search field*
 
 ### Additionally
 ___
 
 I've learned myself web development without any courses or training, so if you have any comments, I will be happy to chat with you on social networks (see  my <a href="https://github.com/liyakot">profile</a> :fire:)
 
-## Getting Started  
+### Getting Started  
 ___
 
 ### Create React App
@@ -87,8 +89,13 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Icons
-In the project I used icons from boxicons:
+I installed icons :
 #### `npm i boxicons`
+
+And used them as a font:
+##### `<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />`
+
+
 
 
 
