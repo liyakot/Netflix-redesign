@@ -21,6 +21,10 @@ a:hover {
   outline: none;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
 button,
 select {
   text-transform: none;
