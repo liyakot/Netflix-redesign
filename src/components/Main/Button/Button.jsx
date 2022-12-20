@@ -9,6 +9,8 @@ const Button = ({ func, content, feature, id }) => {
           ? `${styles.button} ${styles.button_episode}`
           : feature === "subs"
           ? `${styles.button} ${styles.button_subs}`
+          : feature === "form"
+          ? `${styles.button} ${styles.button_form}`
           : styles.button
       }
       onClick={func}

@@ -20,31 +20,33 @@ const All = () => {
   return (
     <div>
       <Header />
-    <div className={styles.full_page}>
-      <Sidebar
-        isSidebarShow={isSidebarShow}
-        setIsSidebarShow={setIsSidebarShow}
-      />
-      <div
-        className={styles.all}
-        style={{
-          width: isSidebarShow ? "80%" : "88%",
-        }}
-      >
-        <ul className={styles.list} /* style={{
+      <div className={styles.full_page}>
+        <Sidebar
+          isSidebarShow={isSidebarShow}
+          setIsSidebarShow={setIsSidebarShow}
+        />
+        <div
+          className={styles.all}
+          style={{
+            width: isSidebarShow ? "80%" : "88%",
+          }}
+        >
+          <ul
+            className={styles.list} /* style={{
           width: isSidebarShow ? "100%" : "100%",
-        }} */>
-          {filteredData.map((movie, key) => (
-            <li key={key} className={styles.list_item}>
-              <Link to={`/${id}/${key}`}>
-                <img src={movie.keyImage} alt={movie.name} />
-                <p className={styles.caption}>{movie.name}</p>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        }} */
+          >
+            {filteredData.map((movie, key) => (
+              <li key={key} className={styles.list_item}>
+                <Link to={`/${id}/${key}`}>
+                  <img src={movie.keyImage} alt={movie.name} />
+                  <p className={styles.caption}>{movie.name}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

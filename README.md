@@ -14,8 +14,7 @@ Updated Netflix is a test updated version of the well-known site. I took the bas
 This a desktop version of the site, designed for devices with a width of 992px or more     
 
 The project was created using React and SCSS. 
-<p><img src="https://img.shields.io/github/languages/top/liyakot/
-Netflix-redesign.svg"></p>
+<p><img src="https://img.shields.io/github/languages/top/liyakot/Netflix-redesign?color=red"></p>
 
 ### How it works
 __
@@ -43,6 +42,7 @@ This is a one-page site, and React Router is used to navigate between such compo
 Also, for each movie there is a *trailer*, *review*, *episodes* (if it is a series), *details*, and below a list of movies of a similar category.
 
 At the Header of each component there is a movie *search field*
+<img width="600px" src="README_img/Search.png">
 
 ### Additionally
 ___

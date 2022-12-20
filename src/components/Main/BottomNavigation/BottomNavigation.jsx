@@ -24,13 +24,12 @@ const tabsNoSerial = [
     _id: 3,
     name: "Details",
   },
-]
+];
 
 const BottomNavigation = ({ isActiveTab, setIsActiveTab, movie }) => {
   return (
     <nav className={styles.nav} id="nav">
       {(movie.serial === true ? tabsSerial : tabsNoSerial).map((tab) => (
-
         <button
           onClick={() => setIsActiveTab(tab._id)}
           key={tab._id}

@@ -1,17 +1,17 @@
-@import '../../../variables';
+@import "../../../variables";
 
 .page {
-    color: $white;
-    font-size: 2rem;
-    text-align: center;
-    padding-top: 6rem;
-    
-    a {
-        text-decoration: none;
-        color: $darkRed;;
+  color: $white;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 6rem;
 
-        &:hover {
-            color: $mainRed
-        }
+  a {
+    text-decoration: none;
+    color: $darkRed;
+
+    &:hover {
+      color: $mainRed;
     }
+  }
 }

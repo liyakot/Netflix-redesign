@@ -42,15 +42,18 @@ const Main = ({ feature }) => {
           >
             {isActiveTab === 1 ? (
               <Information movie={filteredData[id ? id : 0]} />
-            ) : isActiveTab === 2 && filteredData[id ? id : 0].serial === true ? (
+            ) : isActiveTab === 2 &&
+              filteredData[id ? id : 0].serial === true ? (
               <Episodes
                 movie={filteredData[id ? id : 0]}
                 size={isSidebarShow ? "67%" : "75%"}
               />
-            ) : isActiveTab === 2 && filteredData[id ? id : 0].serial !== true ? setIsActiveTab(1) :
-              (
-                isActiveTab === 3 && <Details movie={filteredData[id ? id : 0]} />
-              )}
+            ) : isActiveTab === 2 &&
+              filteredData[id ? id : 0].serial !== true ? (
+              setIsActiveTab(1)
+            ) : (
+              isActiveTab === 3 && <Details movie={filteredData[id ? id : 0]} />
+            )}
 
             <BottomNavigation
               isActiveTab={isActiveTab}

@@ -1,6 +1,7 @@
 import styles from "./Form.module.scss";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import Button from "../Main/Button/Button";
 
 const Form = () => {
   const {
@@ -53,79 +54,18 @@ const Form = () => {
           />
           {errors.email && <i>Invalid email address</i>}
         </p>
-        
-        <input type="submit" value="Send request" className={styles.button}/>
+        <p className={styles.buttons}>
+          
+        <button type="submit" className={styles.buttons_input}>Send request</button>
+        </p>
+        <Button
+          feature="form"
+          func={onSubmit}
+          content={<i id="leftContent" className="bx bx-chevron-left"></i>}
+        />
       </form>
     </div>
   );
 };
 
 export default Form;
-
-/* const [firstNameValue, setFirstNameValue] = useState("");
-  const [lastNameValue, setLastNameValue] = useState("");
-  const [emailValue, setEmailValue] = useState("");
-  const history = useNavigate();
-
-  return (
-    <form className={styles.form}>
-      <h1 className={styles.title}>Subscription request</h1>
-
-      <label className={styles.label} htmlFor="first-name">
-        First Name:{" "}
-      </label>
-      <input
-        className={styles.input}
-        value={firstNameValue}
-        type="text"
-        id="first-name"
-        placeholder="Monica"
-        onChange={(e) => setFirstNameValue(e.target.value)}
-      />
-
-      <label htmlFor="last-name">Last Name: </label>
-      <input
-        value={lastNameValue}
-        type="text"
-        id="last-name"
-        placeholder="Geller"
-        onChange={(e) => setLastNameValue(e.target.value)}
-      />
-
-      <label htmlFor="email">Email: </label>
-      <input
-        value={emailValue}
-        type="email"
-        id="email"
-        placeholder="monika_geller73@gmail.com"
-        onChange={(e) => setEmailValue(e.target.value)}
-      />
-
-      <p>
-        See subscription details
-        <a href="https://help.netflix.com/en/node/24926">here</a>
-      </p>
-
-      <input type="submit" value='send request'/>
-
-      <Button
-        content={
-          <span>
-            <i className="bx bx-play"></i>
-            Send request
-          </span>
-        }
-      />
-      <Button
-        content={
-          <span>
-            <i className="bx bx-play"></i>
-            Go Back
-          </span>
-        }
-        func={() => {
-          history(-1);
-        }}
-      /> 
-    </form>
-  ); */

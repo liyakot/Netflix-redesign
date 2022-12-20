@@ -25,7 +25,8 @@ const Search = () => {
   return (
     <div className={styles.search} ref={listRef}>
       <div className={styles.query}>
-        <input id="input"
+        <input
+          id="input"
           type="text"
           placeholder="I`m searching for..."
           onChange={(e) => {
@@ -40,26 +41,29 @@ const Search = () => {
         style={{ display: showMovieList ? "block" : "none" }}
         onClick={() => {
           setShowMovieList(false);
-          console.log(document.querySelector('#input').value = '')
+          console.log((document.querySelector("#input").value = ""));
         }}
       >
         {DATA.filter((movie) => movie.name.toLowerCase().includes(query)).map(
           (movie, id) => (
-            <Link key={id}
+            <Link
+              key={id}
               to={`/popular/${DATA.findIndex(
                 (item) => item.name === movie.name
               )}`}
-            ><li className={styles.list_item}>
-                <img className={styles.image} src={movie.keyImage} alt={movie.name} />
+            >
+              <li className={styles.list_item}>
+                <img
+                  className={styles.image}
+                  src={movie.keyImage}
+                  alt={movie.name}
+                />
                 <span>{movie.name}</span>
               </li>
             </Link>
-
           )
         )}
       </ul>
-
-
     </div>
   );
 };

@@ -28,7 +28,7 @@ const Sidebar = ({ isSidebarShow, setIsSidebarShow }) => {
     >
       <button
         onClick={() => {
-          setIsSidebarShow(!isSidebarShow)
+          setIsSidebarShow(!isSidebarShow);
         }}
       >
         <i className={`bx bx-${isSidebarShow ? "x" : "menu-alt-left"}`}></i>

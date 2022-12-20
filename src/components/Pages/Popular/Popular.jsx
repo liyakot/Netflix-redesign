@@ -4,7 +4,7 @@ import Header from "../../Header/Header";
 const Popular = () => {
   return (
     <div>
-      <Header /> 
+      <Header />
       <Main feature="popular" />
     </div>
   );

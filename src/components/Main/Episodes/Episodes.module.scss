@@ -23,7 +23,8 @@
     cursor: pointer;
     transition: ease 0.2s;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       background-color: rgba($white, 0.1);
       outline: none;
     }
@@ -51,7 +52,6 @@
         align-items: center;
         transition: 1.5s all;
         padding: 0;
-
 
         &_item {
           list-style-type: none;

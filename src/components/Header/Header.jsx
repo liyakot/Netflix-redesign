@@ -17,8 +17,9 @@ const Header = () => {
         </a>
         <Search />
       </div>
-      <Link to={'/Form'}>
-      <Button feature='subs'
+      <Link to={"/Form"}>
+        <Button
+          feature="subs"
           content={
             <span>
               Subscription request

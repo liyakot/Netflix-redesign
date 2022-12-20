@@ -8,7 +8,6 @@ const Episodes = ({ movie, size }) => {
   let width = 18;
   let count = 3;
   let position = 0;
-  
 
   const scroll = (e) => {
     let list = document.querySelector("#list");
@@ -37,7 +36,7 @@ const Episodes = ({ movie, size }) => {
       >
         {movie.episodes.map((season, key) => (
           <option value={key} className={styles.season_option} key={key}>
-            {`Season ${key + 1}`} 
+            {`Season ${key + 1}`}
           </option>
         ))}
       </select>
