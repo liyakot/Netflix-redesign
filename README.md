@@ -17,7 +17,7 @@ The project was created using React and SCSS.
 <p><img src="https://img.shields.io/github/languages/top/liyakot/Netflix-redesign?color=red"></p>
 
 ### How it works
-__
+___
 
 This is a one-page site, and React Router is used to navigate between such components as 
 - Popular (all movies and cartoons)
@@ -30,13 +30,13 @@ This is a one-page site, and React Router is used to navigate between such compo
 
 **Here are examples of components:**
 
-<p>*Popular:*</p> 
+*<p>Popular:</p>*
 <img width="600px" src="/README_img/Popular.png"> 
 
-<p>*Form:*</p>
+*<p>Form:</p>*
 <img width="600px" src="/README_img/Form.png">
 
-<p>*Cartoons:*</p>
+*<p>Cartoons:</p>*
 <img width="600px" src="/README_img/Cartoons.png">
 
 Also, for each movie there is a *trailer*, *review*, *episodes* (if it is a series), *details*, and below a list of movies of a similar category.
