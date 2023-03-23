@@ -12,7 +12,7 @@ const Form = () => {
   const history = useNavigate();
 
   const onSubmit = async (data) => {
-    history(-1)
+    history(-1);
   };
 
   return (
@@ -55,8 +55,13 @@ const Form = () => {
           {errors.email && <i>Invalid email address</i>}
         </p>
         <p className={styles.buttons}>
-          
-        <button type="submit" className={styles.buttons_input}>Send request</button>
+          <button
+            type="submit"
+            className={styles.buttons_input}
+            aria-label="Send request"
+          >
+            Send request
+          </button>
         </p>
         <Button
           feature="form"

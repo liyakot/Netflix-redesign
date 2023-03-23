@@ -31,14 +31,10 @@ const All = () => {
             width: isSidebarShow ? "80%" : "88%",
           }}
         >
-          <ul
-            className={styles.list} /* style={{
-          width: isSidebarShow ? "100%" : "100%",
-        }} */
-          >
+          <ul className={styles.list}>
             {filteredData.map((movie, key) => (
               <li key={key} className={styles.list_item}>
-                <Link to={`/${id}/${key}`}>
+                <Link to={`/${id}/${key}`} aria-label={movie.name}>
                   <img src={movie.keyImage} alt={movie.name} />
                   <p className={styles.caption}>{movie.name}</p>
                 </Link>

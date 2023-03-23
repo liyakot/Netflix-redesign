@@ -14,6 +14,7 @@ const Button = ({ func, content, feature, id }) => {
           : styles.button
       }
       onClick={func}
+      aria-label={content}
     >
       {content}
     </button>

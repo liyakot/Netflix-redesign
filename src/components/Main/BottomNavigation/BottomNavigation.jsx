@@ -34,6 +34,7 @@ const BottomNavigation = ({ isActiveTab, setIsActiveTab, movie }) => {
           onClick={() => setIsActiveTab(tab._id)}
           key={tab._id}
           className={isActiveTab === tab._id ? styles.active : ""}
+          aria-label={tab.name}
         >
           {tab.name}
         </button>

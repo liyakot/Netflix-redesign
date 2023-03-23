@@ -51,6 +51,7 @@ const Search = () => {
               to={`/popular/${DATA.findIndex(
                 (item) => item.name === movie.name
               )}`}
+              aria-label={movie.name}
             >
               <li className={styles.list_item}>
                 <img

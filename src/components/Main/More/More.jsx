@@ -7,7 +7,7 @@ const More = ({ movies, specify }) => {
       <div className={styles.title}>
         <span>More Like This</span>
         <span className={styles.title_all}>
-          <Link to={`/All/${specify}`}>
+          <Link to={`/All/${specify}`} aria-label="See All">
             See All <i className="bx bx-chevron-right"></i>
           </Link>
         </span>
@@ -15,7 +15,7 @@ const More = ({ movies, specify }) => {
       <ul className={styles.list}>
         {movies.map((movie, id) => (
           <li key={id} className={styles.list_item}>
-            <Link to={`/${specify}/${id}`}>
+            <Link to={`/${specify}/${id}`} aria-label={movie.name}>
               <img src={movie.keyImage} alt={movie.name} />
             </Link>
           </li>

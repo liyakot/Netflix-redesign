@@ -30,13 +30,16 @@ const Sidebar = ({ isSidebarShow, setIsSidebarShow }) => {
         onClick={() => {
           setIsSidebarShow(!isSidebarShow);
         }}
+        aria-label="Show or hide Sidebar"
       >
         <i className={`bx bx-${isSidebarShow ? "x" : "menu-alt-left"}`}></i>
       </button>
       <ul className={isSidebarShow ? styles.show : ""}>
         {menu.map((item) => (
           <li key={item.title}>
-            <Link to={item.link}>{item.title}</Link>
+            <Link to={item.link} aria-label={item.title}>
+              {item.title}
+            </Link>
           </li>
         ))}
       </ul>
